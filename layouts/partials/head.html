@@ -77,6 +77,6 @@
 {{- end }}
 
 <!-- Google Analytics internal template -->
-{{- if .Site.GoogleAnalytics }}
+{{- if .Site.Config.Services.GoogleAnalytics }}
     {{ template "_internal/google_analytics.html" . }}
 {{- end}}
